@@ -18,7 +18,7 @@ function App({ signOut }) {
         <Image src={logo} className="App-logo" alt="logo" />
         <Heading level={1}>Authentification Disponible !</Heading>
       </Card>
-      <Button onClick={signOut}> Deconnexion </Button>
+      <Button onClick={signOut}> Déconnexion </Button>
     </View>
   );
 }
