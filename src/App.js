@@ -3,23 +3,22 @@ import './App.css';
 import '@aws-amplify/ui-react/styles.css';
 import {
   withAuthenticator,
+  AmplifySignOut,
   Button,
   Heading,
   Image,
   View,
   Card,
 } from "@aws-amplify/ui-react";
+import Notes from './modules/Notes';
 
 
 function App({ signOut }) {
   return (
-    <View className="App">
-      <Card className="App-header">
-        <Image src={logo} className="App-logo" alt="logo" />
-        <Heading level={1}>Authentification Disponible !</Heading>
-      </Card>
+    <div className="App">
+      <Notes />
       <Button onClick={signOut}> Déconnexion </Button>
-    </View>
+    </div>
   );
 }
 
